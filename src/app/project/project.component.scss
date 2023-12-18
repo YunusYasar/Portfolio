@@ -12,6 +12,7 @@ a {
    color: #fff;
    height: 340px;
    padding: 37px 25px;
+   margin: 50px 0px;
    box-sizing: border-box;
    overflow: hidden;
 }
@@ -122,6 +123,46 @@ a {
 
 .above-bg {
    position: relative;
+}
+
+.row-reverse {
+   flex-direction: row-reverse;
+}
+@media screen and (max-width: 500px) {
+   .description-container {
+      width: 100%;
+   }
+   .test {
+      width: 124px;
+   }
+   .github {
+      width: 110px;
+   }
+}
+@media screen and (max-width: 900px) {
+   .container {
+      flex-direction: column;
+      height: auto;
+   }
+   .row-reverse {
+      flex-direction: column;
+   }
+   .description {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+   }
+   .buttons-container {
+      margin-top: 50px;
+      justify-content: space-around;
+   }
+   .description {
+      span {
+         text-align: center;
+         width: 90%;
+      }
+   }
 }
 
 @media screen and (min-width: 700px) {

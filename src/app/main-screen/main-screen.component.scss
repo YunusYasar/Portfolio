@@ -16,8 +16,14 @@ a {
    display: flex;
    filter: drop-shadow(4px 3px 7px #00bee8);
    img {
-      height: 70px;
+      height: 46px;
    }
+}
+
+.burger-menu {
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 .img-background {
    height: 53vh;
@@ -134,19 +140,19 @@ a {
    position: relative;
    z-index: 2;
    display: flex;
-   // width: 100vw;
    max-width: 100%;
    justify-content: center;
    align-items: center;
    background: #141d2f;
    backdrop-filter: blur(32.5px);
-   padding: 37px 25px;
+   padding: 0px 25px;
    height: 110px;
 }
 
 .content {
    display: flex;
    justify-content: space-between;
+   align-items: center;
    width: 100%;
    color: white !important;
 
@@ -498,8 +504,8 @@ a {
    }
    .background {
       background-position: top;
-      width: 70%;
-      height: 100%;
+      width: 60%;
+      height: 90%;
       background-color: #141d2f;
       background-size: cover;
    }

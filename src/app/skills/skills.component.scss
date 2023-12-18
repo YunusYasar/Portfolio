@@ -1,36 +1,36 @@
 a {
    text-decoration: none;
 }
+
 .container {
-   height: 110vh;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   flex-direction: row-reverse;
    width: 100vw;
    max-width: 100%;
    background-color: #141d2f;
-   padding: 37px 25px;
-   padding-right: 0;
+   padding: 80px;
+   margin-top: 60px;
    box-sizing: border-box;
    text-align: right;
    position: relative;
 }
-
-.divider {
-   width: 20px;
-   height: 3px;
-   background-color: #9747ff;
-   position: absolute;
-   right: 0px;
-   top: 70px;
-   border-top-left-radius: 2px;
-   border-bottom-left-radius: 2px;
+:host {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-color: #141d2f;
 }
 .content {
    display: flex;
+   right: 90px !important;
+
    flex-direction: column;
-   gap: 25px;
    color: #fff;
-   margin-right: 25px;
    h2 {
-      font-size: 45px;
+      font-size: 90px;
       font-style: normal;
       font-weight: 700;
    }
@@ -38,16 +38,16 @@ a {
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
+      margin-right: 45px;
    }
 }
 
 .skills-box {
    display: flex;
-   padding-right: 25px;
-   margin-top: 25px;
    flex-wrap: wrap;
+   max-width: 720px;
    height: 56%;
-   justify-content: center;
+   justify-content: flex-start;
    gap: 38px;
    align-items: center;
    text-align: center;
@@ -60,10 +60,12 @@ a {
    align-items: center;
    gap: 5px;
    color: #fff;
-   width: 83px;
+   width: 88px;
+   height: 100px;
+   margin: 20px;
    img {
-      width: 40px;
-      height: 45px;
+      width: 56px;
+      height: 85px;
       transition: transform 0.2s;
       &:hover {
          cursor: pointer;
@@ -74,18 +76,18 @@ a {
 
 .skills-container {
    display: flex;
+   justify-content: flex-end;
    flex-direction: column;
-   align-items: center;
-   justify-content: center;
+   width: 571px;
+
    button {
-      bottom: 0px;
-      margin-right: 25px;
+      width: 200px;
+      height: 58px;
+      font-size: 23px;
       color: #fff;
       display: flex;
-      padding: 15px 30px;
       justify-content: center;
       align-items: center;
-      gap: 10px;
       background-color: #70e61c;
       border-radius: 10px;
       background: #70e61c;
@@ -98,186 +100,98 @@ a {
       }
    }
 }
+.skills-header {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   height: 180px;
+}
+.divider {
+   width: 58px;
+   height: 3px;
+   background-color: #9747ff;
+   right: 0px;
+   border-top-left-radius: 2px;
+   border-bottom-left-radius: 2px;
+   position: absolute;
+}
 
 .btn {
-   max-width: 100%;
-   position: absolute;
-   bottom: -17px;
-   height: 100px;
+   height: 58px;
    display: flex;
+   font-size: 23px;
    align-items: center;
    justify-content: center;
 }
 
-@media screen and (min-width: 350px) and (min-height: 826px) {
-   .btn {
-      max-width: 100%;
-      position: absolute;
-      bottom: 25px;
-      height: 100px;
+@media screen and (max-width: 1100px) {
+   .container {
       display: flex;
+      justify-content: center;
       align-items: center;
+      flex-direction: column;
+      padding-top: 0px;
+      margin-top: 0px;
+   }
+   .skills-container {
+      width: 100vw;
+      margin: 0px 0px 50px 0;
+   }
+   .skills-box {
       justify-content: center;
    }
-   .skills-container {
-      button {
-         position: unset;
-         margin-right: unset;
-      }
-   }
-}
-
-@media screen and (min-width: 768px) and (min-height: 826px) {
-   .container {
-      height: 78vh;
-   }
-   .btn {
-      bottom: -23px;
-   }
-}
-@media screen and (min-width: 768px) {
-   .skill {
-      width: 130px;
-      img {
-         width: 65px;
-         height: 60px;
-      }
-   }
-   // .container {
-   //   height: 70vh;
-   // }
-}
-
-@media screen and (min-width: 1024px) and (min-height: 826px) {
-   .btn {
-      bottom: 204px;
-   }
-}
-
-@media screen and (min-width: 1024px) {
-   .container {
-      display: flex;
-      flex-direction: row-reverse;
-      align-items: center;
-      height: 76vh;
-   }
-
-   .btn {
-      bottom: 187px;
-   }
-   .skills-container {
-      align-self: center;
-      margin-bottom: 200px;
-      margin-right: 75px;
-      gap: 50px;
-      button {
-         align-self: flex-end;
-         margin-left: 125px;
-         position: unset;
-      }
-   }
-
-   .skills-box {
-      gap: unset;
-      height: 69%;
-      width: 100%;
-   }
-
-   .content {
-      margin-right: -43px;
-
-      h2 {
-         font-size: 62px;
-         font-style: normal;
-         font-weight: 700;
-      }
-   }
-   .divider {
-      width: 25px;
-      top: 222px;
-   }
-}
-
-@media screen and (min-width: 1500px) {
-   .content {
-      h2 {
-         font-size: 92px;
-      }
-      p {
-         font-size: 24px;
-      }
-   }
-   .divider {
-      top: 212px;
-   }
-   .skills-container {
-      button {
-         margin-right: 130px;
-      }
-   }
-}
-
-@media screen and (min-width: 1440px) and (min-height: 817px) {
-   .divider {
-      top: 222px;
-      width: 37px;
-   }
-   .btn {
-      right: 37px;
-      bottom: 250px;
-   }
-   .skills-container {
-      margin-right: 100px;
-   }
-   .skills-box {
-      height: 59%;
-      width: 43%;
-      gap: 61px;
+   .skills-header {
+      justify-content: center;
    }
    .content {
       p {
-         width: 70%;
-         align-self: flex-end;
+         text-align: center;
       }
-   }
-   .skill {
-      width: 67px;
    }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (max-width: 700px) {
+   .container {
+      padding: 0;
+   }
    .divider {
-      top: 222px;
+      width: 30px;
    }
 
    .skills-container {
-      button {
-         margin: unset;
+      width: 100vw;
+   }
+   .skills-header {
+      width: 100vw;
+      justify-content: flex-end;
+      h2 {
+         font-size: 45px;
+         margin-right: 50px;
       }
    }
 
-   .skills-box {
-      gap: 97px;
-   }
-
    .content {
-      margin-right: unset;
+      p {
+         text-align: end;
+      }
    }
-   .btn {
-      right: 97px;
-   }
-   .container {
-      height: 765.4px;
-      width: 100%;
-      padding: 37px 100px;
-      padding-right: 0;
-   }
-
-   :host {
+   .skill {
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
-      background-color: #141d2f;
+      align-items: center;
+      gap: 5px;
+      color: #fff;
+      width: 59px;
+      height: 100px;
+      img {
+         width: 41px;
+         height: 45px;
+         transition: transform 0.2s;
+         &:hover {
+            cursor: pointer;
+            transform: scale(1.2);
+         }
+      }
    }
 }
