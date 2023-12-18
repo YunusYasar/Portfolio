@@ -1,0 +1,283 @@
+a {
+   text-decoration: none;
+}
+.container {
+   height: 110vh;
+   width: 100vw;
+   max-width: 100%;
+   background-color: #141d2f;
+   padding: 37px 25px;
+   padding-right: 0;
+   box-sizing: border-box;
+   text-align: right;
+   position: relative;
+}
+
+.divider {
+   width: 20px;
+   height: 3px;
+   background-color: #9747ff;
+   position: absolute;
+   right: 0px;
+   top: 70px;
+   border-top-left-radius: 2px;
+   border-bottom-left-radius: 2px;
+}
+.content {
+   display: flex;
+   flex-direction: column;
+   gap: 25px;
+   color: #fff;
+   margin-right: 25px;
+   h2 {
+      font-size: 45px;
+      font-style: normal;
+      font-weight: 700;
+   }
+   p {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+   }
+}
+
+.skills-box {
+   display: flex;
+   padding-right: 25px;
+   margin-top: 25px;
+   flex-wrap: wrap;
+   height: 56%;
+   justify-content: center;
+   gap: 38px;
+   align-items: center;
+   text-align: center;
+}
+
+.skill {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 5px;
+   color: #fff;
+   width: 83px;
+   img {
+      width: 40px;
+      height: 45px;
+      transition: transform 0.2s;
+      &:hover {
+         cursor: pointer;
+         transform: scale(1.2);
+      }
+   }
+}
+
+.skills-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   button {
+      bottom: 0px;
+      margin-right: 25px;
+      color: #fff;
+      display: flex;
+      padding: 15px 30px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      background-color: #70e61c;
+      border-radius: 10px;
+      background: #70e61c;
+      box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      transition: transform 0.2s;
+      &:hover {
+         cursor: pointer;
+         background-color: #9747ff;
+         transform: scale(1.1);
+      }
+   }
+}
+
+.btn {
+   max-width: 100%;
+   position: absolute;
+   bottom: -17px;
+   height: 100px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+@media screen and (min-width: 350px) and (min-height: 826px) {
+   .btn {
+      max-width: 100%;
+      position: absolute;
+      bottom: 25px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   .skills-container {
+      button {
+         position: unset;
+         margin-right: unset;
+      }
+   }
+}
+
+@media screen and (min-width: 768px) and (min-height: 826px) {
+   .container {
+      height: 78vh;
+   }
+   .btn {
+      bottom: -23px;
+   }
+}
+@media screen and (min-width: 768px) {
+   .skill {
+      width: 130px;
+      img {
+         width: 65px;
+         height: 60px;
+      }
+   }
+   // .container {
+   //   height: 70vh;
+   // }
+}
+
+@media screen and (min-width: 1024px) and (min-height: 826px) {
+   .btn {
+      bottom: 204px;
+   }
+}
+
+@media screen and (min-width: 1024px) {
+   .container {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      height: 76vh;
+   }
+
+   .btn {
+      bottom: 187px;
+   }
+   .skills-container {
+      align-self: center;
+      margin-bottom: 200px;
+      margin-right: 75px;
+      gap: 50px;
+      button {
+         align-self: flex-end;
+         margin-left: 125px;
+         position: unset;
+      }
+   }
+
+   .skills-box {
+      gap: unset;
+      height: 69%;
+      width: 100%;
+   }
+
+   .content {
+      margin-right: -43px;
+
+      h2 {
+         font-size: 62px;
+         font-style: normal;
+         font-weight: 700;
+      }
+   }
+   .divider {
+      width: 25px;
+      top: 222px;
+   }
+}
+
+@media screen and (min-width: 1500px) {
+   .content {
+      h2 {
+         font-size: 92px;
+      }
+      p {
+         font-size: 24px;
+      }
+   }
+   .divider {
+      top: 212px;
+   }
+   .skills-container {
+      button {
+         margin-right: 130px;
+      }
+   }
+}
+
+@media screen and (min-width: 1440px) and (min-height: 817px) {
+   .divider {
+      top: 222px;
+      width: 37px;
+   }
+   .btn {
+      right: 37px;
+      bottom: 250px;
+   }
+   .skills-container {
+      margin-right: 100px;
+   }
+   .skills-box {
+      height: 59%;
+      width: 43%;
+      gap: 61px;
+   }
+   .content {
+      p {
+         width: 70%;
+         align-self: flex-end;
+      }
+   }
+   .skill {
+      width: 67px;
+   }
+}
+
+@media screen and (min-width: 1440px) {
+   .divider {
+      top: 222px;
+   }
+
+   .skills-container {
+      button {
+         margin: unset;
+      }
+   }
+
+   .skills-box {
+      gap: 97px;
+   }
+
+   .content {
+      margin-right: unset;
+   }
+   .btn {
+      right: 97px;
+   }
+   .container {
+      height: 765.4px;
+      width: 100%;
+      padding: 37px 100px;
+      padding-right: 0;
+   }
+
+   :host {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #141d2f;
+   }
+}

@@ -1,0 +1,214 @@
+.container {
+   height: 100vh;
+   width: 100vw;
+   max-width: 100%;
+   padding: 37px 25px;
+   background: #141d2f;
+   color: #fff;
+   position: relative;
+   overflow: hidden;
+   h2 {
+      font-size: 45px;
+      font-style: normal;
+      font-weight: 700;
+   }
+}
+
+.bg-img {
+   z-index: 11;
+   height: 80vh;
+   width: 100vw;
+   max-width: 100%;
+   background-image: url('../../assets/img/Purple_shadow_one.png');
+   position: absolute;
+   filter: blur(46.5px);
+   width: 375px;
+   top: 0;
+   left: 54px;
+}
+
+.content {
+   position: absolute;
+   z-index: 11;
+   padding: 37px 25px;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.sub-text {
+   display: flex;
+   gap: 35px;
+   align-items: flex-start;
+}
+
+.sub-container {
+   display: flex;
+   flex-direction: column;
+   margin-top: 42px;
+   gap: 20px;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+}
+
+.bulb {
+   padding-right: 14px;
+   transition: transform 0.2s;
+   &:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+   }
+}
+
+.img {
+   width: 100%;
+   height: 100%;
+}
+
+.puzzle {
+   transition: transform 0.2s;
+   &:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+   }
+}
+
+.about-picture-container {
+   display: none;
+}
+
+@media screen and (min-width: 414px) {
+   .container {
+      height: 85vh;
+   }
+}
+
+@media screen and (min-width: 768px) {
+   .bg-img {
+      top: 27px;
+      height: 47vh;
+   }
+   .container {
+      height: 60vh;
+   }
+}
+
+@media screen and (min-width: 1024px) {
+   .content {
+      width: 50%;
+      position: unset;
+      h2 {
+         font-size: 62px;
+      }
+   }
+
+   .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 61vh;
+   }
+
+   .about-picture-container {
+      position: relative;
+      display: flex;
+      width: 49%;
+      height: 63%;
+      object-fit: cover;
+      justify-content: center;
+      align-items: flex-start;
+      object-fit: cover;
+      img {
+         //  width: 341px;
+         //  height: 332px;
+         object-fit: cover;
+         top: 8px;
+         position: relative;
+      }
+   }
+   .divider {
+      position: absolute;
+      right: -26px;
+      bottom: 146px;
+      width: 177px;
+      height: 4px;
+      background-color: #70e61c;
+   }
+
+   .about-picture {
+      align-self: flex-start;
+      border: 4px solid #70e61c;
+      border-radius: 100%;
+      overflow: hidden;
+      margin-right: 150px;
+      width: 100%;
+      height: 100%;
+      img {
+         width: 100%;
+         height: 100%;
+      }
+   }
+}
+
+@media screen and (min-width: 1111px) {
+   .about-picture-container {
+      width: 48%;
+      height: 78%;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row-reverse;
+   }
+   .about-picture {
+      width: 100%;
+      margin-right: unset;
+   }
+   .container {
+      padding-right: 0;
+   }
+   .divider {
+      width: 45%;
+      position: unset;
+   }
+}
+
+@media screen and (min-width: 1200px) {
+   .about-picture {
+      img {
+         width: 100%;
+      }
+   }
+   .about-picture-container {
+      height: 91%;
+   }
+}
+@media screen and (min-width: 1440px) and (min-height: 817px) {
+   .content {
+      padding: unset;
+   }
+   .container {
+      padding: 37px 100px;
+      padding-right: 0;
+   }
+}
+@media screen and (min-width: 1440px) {
+   .about-picture-container {
+      height: 100%;
+   }
+   .about-picture {
+      width: 557px;
+   }
+   .container {
+      width: 100%;
+      padding: 37px 100px;
+      padding-right: 0;
+   }
+   :host {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #141d2f;
+   }
+}

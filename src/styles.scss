@@ -1,1 +1,83 @@
-/* You can add global styles to this file, and also import other style files */
+/* poppins-regular - latin */
+@font-face {
+   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 400;
+   src: url('./assets/fonts/poppins-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-600 - latin */
+@font-face {
+   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 600;
+   src: url('./assets/fonts/poppins-v20-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-700 - latin */
+@font-face {
+   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 700;
+   src: url('./assets/fonts/poppins-v20-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+body {
+   margin: 0;
+   // overflow-x: hidden;
+   font-family: 'Poppins' !important;
+   width: 100%;
+}
+
+html {
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   width: 100%;
+}
+
+:host {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   // background-color: #141d2f;
+}
+
+app-main-content {
+   max-width: 100%;
+}
+
+app-impressum {
+   color: white;
+   width: 100vw;
+   padding: 37px 25px;
+   height: 65.7vh;
+   max-width: 1440px;
+   font-size: 16px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+   width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+   background: #141d2f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+   background: #9747ff;
+   border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+   background: #70e61c;
+}

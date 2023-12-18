@@ -1,0 +1,74 @@
+<div id="#main" class="main-container">
+  <!-- Header -->
+  <div [ngClass]="{ modal: true, show: showModal }" class="modal">
+    <a href="#about" (click)="toggleModal()">About me</a>
+    <a href="#skills" (click)="toggleModal()">My skills</a>
+    <a href="#portfolio" (click)="toggleModal()">Portfolio</a>
+    <a href="#contact" (click)="toggleModal()">Contact</a>
+  </div>
+
+  <div id="header" class="header">
+    <div class="content">
+      <span class="logo">
+          <img  src="../../assets/img/logo.png" alt="Logo">
+      </span>
+
+      <a class="burger-menu" href="#">
+        <img *ngIf="showModal" (click)="toggleModal()" src="../../assets/img/close.svg" />
+        <img *ngIf="!showModal" (click)="toggleModal()" src="../../assets/img/burger_menu.svg"/>
+      </a>
+      <div class="links">
+        <a href="#about" >About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main content alone -->
+
+  <div class="img-background">
+    <div class="background">
+      <img class="profile-picture" src="../../assets/img/yunus.png" />
+    </div>
+    <img class="vector" src="../../assets/img/vector.svg" />
+  </div>
+  <div class="text-content-container">
+    <div class="sub-container">
+      <div class="horizontal-container">
+        <div class="iam-container">
+          <span>I am</span>
+        </div>
+        <span class="name">Yunus Yasar</span>
+        <span class="dev-span">FRONTEND DEVELOPER</span>
+        <a href="#contact">
+          <button class="btn">Let's Talk!</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- links -->
+
+  <div class="links-container">
+    <div class="divider"></div>
+    <a target="_blank" href="https://github.com/YunusYasar">
+      <img class="links" src="../../assets/img/Github.svg"/>
+    </a>
+    <a href="mailto:yunusyasar1903@gmail.com">
+      <img class="links" src="../../assets/img/Email.svg" />
+    </a>
+    <a target="_blank" href="https://www.linkedin.com/in/yunus-yasar/">
+      <img class="links" src="../../assets/img/LinkedIn.svg"/>
+    </a>
+    <span
+      class="mail">yunusyasar1903@gmail.com
+    </span>
+    <div class="scroll-container">
+      <a class="scroll-content" href="#contact">
+        <span>Scroll down</span>
+        <img src="../../assets/img/arrow-mobile.svg"/>
+      </a>
+    </div>
+  </div>
+</div>
