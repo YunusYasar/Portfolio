@@ -11,28 +11,26 @@ import { SkillsComponent } from './skills/skills.component';
 import { BetweenPsComponent } from './between-ps/between-ps.component';
 import { ProjectComponent } from './project/project.component';
 import { ContactSectionComponent } from './contact-section/contact-section.component';
-import { BetweenCfComponent } from './between-cf/between-cf.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { MainContentComponent } from './main-content/main-content.component';
 @NgModule({
-  declarations: [
-    AppComponent,
-    MainScreenComponent,
-    AboutMeComponent,
-    SkillsComponent,
-    BetweenPsComponent,
-    ProjectComponent,
-    ContactSectionComponent,
-    BetweenCfComponent,
-    FooterComponent,
-    ImpressumComponent,
-    MainContentComponent,
-  ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
-  providers: [],
-  bootstrap: [AppComponent],
+   declarations: [
+      AppComponent, //
+      MainScreenComponent,
+      AboutMeComponent,
+      SkillsComponent,
+      BetweenPsComponent,
+      ProjectComponent,
+      ContactSectionComponent,
+      FooterComponent,
+      ImpressumComponent,
+      MainContentComponent,
+   ],
+   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
+   providers: [],
+   bootstrap: [AppComponent],
 })
 export class AppModule {}

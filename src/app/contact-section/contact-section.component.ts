@@ -27,6 +27,7 @@ export class ContactSectionComponent {
       fd.append('name', nameField.value);
       fd.append('message', messageField.value);
       fd.append('email', emailField.value);
+
       await fetch('https://yunus-yasar.de/send_mail/send_mail.php', {
          method: 'POST',
          body: fd,
@@ -40,7 +41,7 @@ export class ContactSectionComponent {
          nameField.value = '';
          emailField.value = '';
          messageField.value = '';
-      }, 3000);
+      }, 2000);
    }
 
    onKeyDown(event: KeyboardEvent) {
