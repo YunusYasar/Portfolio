@@ -13,6 +13,7 @@
    align-items: center;
    color: #fff;
    gap: 25px;
+   z-index: 999;
    h2 {
       color: #ffffff;
       width: 150px;
@@ -29,6 +30,14 @@
    height: 3px;
    width: 100%;
    background-color: #70e61c;
+}
+
+.logo-footer {
+   display: flex;
+   filter: drop-shadow(4px 3px 7px #00bee8);
+   img {
+      height: 60px;
+   }
 }
 
 .links {
@@ -60,21 +69,22 @@
 
 @media screen and (min-width: 768px) {
    .container {
-      height: 45vh;
+      height: 380px;
       justify-content: flex-start;
    }
 }
 
 @media screen and (min-width: 820px) {
    .container {
-      height: 53vh;
+      height: 380px;
       justify-content: flex-start;
    }
 }
 
 @media screen and (min-width: 1024px) {
    .container {
-      height: 36vh;
+      height: 380px;
+      justify-content: center;
    }
 }
 
@@ -92,7 +102,8 @@
       padding: 37px 100px;
       flex-direction: row;
       justify-content: space-between;
-      max-width: 1440px;
+      width: 100%;
+      height: 290px;
       h2 {
          font-size: 62px;
       }
@@ -109,11 +120,7 @@
       left: 109px;
       bottom: 129px;
    }
-
-   .container {
-      width: 100%;
-   }
    .impressum-link {
-      bottom: 93px;
+      bottom: 80px;
    }
 }

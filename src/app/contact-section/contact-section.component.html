@@ -1,26 +1,35 @@
 <div id="contact" class="container">
-  <div class="bg-img"></div>
 
   <div class="head-container">
     <div class="divider"></div>
-    <h2 >Contact</h2>
+    <h2>Contact</h2>
   </div>
+  <div class="content">
+    <div class="sub-container">
+      <h3>Got a problem to solve?</h3>
+      <p>
+        Contact me through this form, I am interested in hearing you,
+        knowing your ideas and contributing to your projects with my work. <br><br>
+        I am always open to new challenges and opportunities to collaborate,
+        so feel free to reach out if you think we can create something amazing together.
+      </p>
+      <p>Need a Frontend developer?<span class="contact-span">Contact me!</span></p>
 
-  <div class="sub-container">
-    <h3 >Got a problem to solve?</h3>
-    
-    <p>  
-    Contact me through this form and let's get to know each other! 
-      I want to hear what you are working on !
-    </p>
-    
-    <p>Need a Frontend developer?<span class="contact-span">Contact me!</span></p>
+    </div>
+
+    <form class="form" (submit)="sendMail()" #myForm ngNativeValidate>
+      <input class="name" placeholder="Your name" type="text" name="name" #nameField required (keydown)="onKeyDown($event)">
+      <input class="email" placeholder="Your email" name="email" type="email" #emailField required (keydown)="onKeyDown($event)">
+      <textarea class="textarea" required name="message" #messageField placeholder="Your message" (keydown)="onKeyDown($event)"></textarea>
+      <button class="btn-submit" #sendButton type="submit">Send message :)</button>
+    </form>
   </div>
-
-  <form class="form" (submit)="sendMail()" #myForm ngNativeValidate>
-    <input class="name" placeholder="Your name" type="text" name="name" #nameField required (keydown)="onKeyDown($event)">
-    <input class="email" placeholder="Your email" name="email" type="email" #emailField required (keydown)="onKeyDown($event)">
-    <textarea class="textarea" required  name="message" #messageField placeholder="Your message" (keydown)="onKeyDown($event)" ></textarea> 
-    <button class="btn-submit" #sendButton type="submit">Send message :)</button>
-  </form>
+ 
 </div>
+ <div class="container-arrow">
+    <a href="#header">
+      <img src="../../assets/img/arrow-mobile.svg">
+    </a>
+  <div class="bg-img"></div>
+
+  </div>

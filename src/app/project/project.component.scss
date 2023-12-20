@@ -25,6 +25,7 @@ a {
    width: 620px;
    img {
       height: 220px;
+      z-index: 99;
    }
 }
 .justify-start {
@@ -39,6 +40,7 @@ a {
 .description-container {
    width: 513px;
    flex-direction: column;
+   z-index: 99;
 }
 
 .test {
@@ -107,26 +109,34 @@ a {
    font-weight: 400;
 }
 
-.bg-img {
-   width: 290.964px;
-   height: 342.535px;
-   position: absolute;
-   background-image: url(../../assets/img/purple_shadow2.svg);
-   filter: blur(45.5px);
-   transform: rotate(123deg);
-
-   background-position: bottom;
-   bottom: -3416px;
-
-   flex-shrink: 0;
-}
-
-.above-bg {
-   position: relative;
-}
-
 .row-reverse {
    flex-direction: row-reverse;
+}
+
+.bg-img {
+   width: 100%;
+   height: 100%;
+   background-image: url('../../assets/img/purple-shadow-3.png');
+   background-repeat: no-repeat;
+   background-size: 30%;
+   background-position: left;
+   position: absolute;
+   // filter: blur(46.5px);
+
+   left: 0px;
+   // z-index: 999;
+}
+
+.bg-img-right {
+   width: 100%;
+   height: 100%;
+   background-image: url('../../assets/img/green_shadow2.svg');
+   background-repeat: no-repeat;
+   background-size: 11%;
+   background-position: right;
+   position: absolute;
+   right: 0px;
+   z-index: 999;
 }
 @media screen and (max-width: 500px) {
    .description-container {
@@ -139,6 +149,16 @@ a {
       width: 110px;
    }
 }
+@media screen and (max-width: 600px) {
+   .bg-img {
+      background-size: 70%;
+      background-position: 0px 130px;
+   }
+   .bg-img-right {
+      background-size: 30%;
+   }
+}
+
 @media screen and (max-width: 900px) {
    .container {
       flex-direction: column;
@@ -162,6 +182,9 @@ a {
          text-align: center;
          width: 90%;
       }
+   }
+   .bg-img-right {
+      background-size: 25%;
    }
 }
 

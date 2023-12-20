@@ -23,6 +23,20 @@ a {
    justify-content: center;
    background-color: #141d2f;
 }
+
+.bg-img {
+   z-index: 11;
+   background-image: url('../../assets/img/greenshadow.svg');
+   background-repeat: no-repeat;
+   background-position: left;
+   position: absolute;
+   // filter: blur(46.5px);
+   width: 428px;
+   height: 951px;
+   top: 0;
+   left: 0px;
+}
+
 .content {
    display: flex;
    right: 90px !important;

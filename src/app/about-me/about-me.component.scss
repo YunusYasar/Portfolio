@@ -18,21 +18,21 @@
 }
 
 .bg-img {
-   z-index: 11;
-   height: 80vh;
-   width: 100vw;
-   max-width: 100%;
-   background-image: url('../../assets/img/Purple_shadow_one.png');
-   position: absolute;
-   filter: blur(46.5px);
-   width: 375px;
-   top: 0;
-   left: 54px;
+   width: 286px;
+   height: 710px;
+   background-image: url('../../assets/img/purple-shadow-2.png');
+   background-repeat: no-repeat;
+   background-position: right;
+   position: absolute !important;
+   // filter: blur(46.5px);
+   right: 0px;
+   z-index: 999;
+   vertical-align: middle;
 }
 
 .content {
    position: absolute;
-   z-index: 11;
+   z-index: 999;
    padding: 37px 25px;
    box-sizing: border-box;
    display: flex;
@@ -111,19 +111,20 @@
 @media screen and (min-width: 414px) {
    .container {
       height: 85vh;
+      padding: 0;
    }
 }
 
 @media screen and (min-width: 768px) {
-   .bg-img {
-      top: 27px;
-      height: 47vh;
-   }
    .container {
       height: 60vh;
    }
 }
-
+@media screen and (max-width: 1024px) {
+   .bg-img {
+      filter: blur(46.5px);
+   }
+}
 @media screen and (min-width: 1024px) {
    .content {
       width: 50%;
