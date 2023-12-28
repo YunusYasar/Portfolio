@@ -3,7 +3,7 @@ a {
 }
 
 .container {
-   width: 100vw !important;
+   width: 100%;
    max-width: 100%;
    background-color: #141d2f;
    display: flex;
@@ -15,6 +15,7 @@ a {
    margin: 50px 0px;
    box-sizing: border-box;
    overflow: hidden;
+   gap: 25px;
 }
 
 .project-img {
@@ -23,9 +24,9 @@ a {
    justify-content: center;
    align-items: center;
    width: 620px;
+   z-index: 999;
    img {
       height: 220px;
-      z-index: 99;
    }
 }
 .justify-start {
@@ -38,9 +39,9 @@ a {
    text-align: end;
 }
 .description-container {
-   width: 513px;
+   // width: 513px;
    flex-direction: column;
-   z-index: 99;
+   // z-index: 99;
 }
 
 .test {
@@ -50,9 +51,11 @@ a {
    justify-content: center;
    align-items: center;
    gap: 10px;
+   cursor: pointer;
    border-radius: 10px;
    background-color: #9747ff;
    transition: transform 0.2s;
+   z-index: 9999 !important;
    &:hover {
       cursor: pointer;
       background-color: #70e61c;
@@ -67,9 +70,11 @@ a {
    justify-content: center;
    align-items: center;
    gap: 10px;
+   cursor: pointer;
    border-radius: 10px;
    border: 1px solid var(--style-1-syle-1-a-green-purple-green, #70e61c);
    transition: transform 0.2s;
+   z-index: 9999 !important;
    &:hover {
       cursor: pointer;
       background-color: #70e61c;
@@ -81,8 +86,12 @@ a {
    display: flex;
    height: 58px;
    margin-top: 12px;
+   position: relative;
+   z-index: 9999 !important;
+   font-size: 16px;
    a {
       color: white !important;
+      cursor: pointer;
    }
 }
 
@@ -92,6 +101,7 @@ a {
    font-weight: 700;
    color: #9747ff;
    margin: 0;
+   z-index: 9999;
 }
 
 .skills-used {
@@ -122,21 +132,17 @@ a {
    background-position: left;
    position: absolute;
    // filter: blur(46.5px);
-
    left: 0px;
-   // z-index: 999;
 }
 
 .bg-img-right {
-   width: 100%;
-   height: 100%;
+   width: 158px;
+   height: 467px;
    background-image: url('../../assets/img/green_shadow2.svg');
    background-repeat: no-repeat;
-   background-size: 11%;
-   background-position: right;
    position: absolute;
    right: 0px;
-   z-index: 999;
+   margin-bottom: 140px;
 }
 @media screen and (max-width: 500px) {
    .description-container {
@@ -152,10 +158,7 @@ a {
 @media screen and (max-width: 600px) {
    .bg-img {
       background-size: 70%;
-      background-position: 0px 130px;
-   }
-   .bg-img-right {
-      background-size: 30%;
+      background-position: 0px 50px;
    }
 }
 
@@ -183,9 +186,6 @@ a {
          width: 90%;
       }
    }
-   .bg-img-right {
-      background-size: 25%;
-   }
 }
 
 @media screen and (min-width: 700px) {
@@ -195,6 +195,7 @@ a {
    .buttons-container {
       width: 100%;
       gap: 120px;
+      font-size: 23px;
    }
 }
 
@@ -236,7 +237,7 @@ a {
          max-width: 500px;
       }
       .buttons-container {
-         justify-content: start;
+         justify-content: space-between;
       }
    }
 }

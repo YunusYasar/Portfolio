@@ -1,7 +1,7 @@
 .container {
-   width: 100vw;
+   width: 100%;
    max-width: 100%;
-   height: 40vh;
+   height: 290px;
    display: flex;
    flex-direction: column;
    background-color: #141d2f;
@@ -14,6 +14,8 @@
    color: #fff;
    gap: 25px;
    z-index: 999;
+   margin-left: 0px !important;
+   margin-right: 0px !important;
    h2 {
       color: #ffffff;
       width: 150px;
@@ -30,6 +32,7 @@
    height: 3px;
    width: 100%;
    background-color: #70e61c;
+   z-index: 999;
 }
 
 .logo-footer {
@@ -61,29 +64,29 @@
 }
 
 .impressum {
-   font-size: 16px;
-   font-style: normal;
-   font-weight: 400;
-   color: white;
+   a {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      color: white;
+   }
 }
 
 @media screen and (min-width: 768px) {
    .container {
-      height: 380px;
       justify-content: flex-start;
    }
 }
 
 @media screen and (min-width: 820px) {
    .container {
-      height: 380px;
       justify-content: flex-start;
    }
 }
 
 @media screen and (min-width: 1024px) {
    .container {
-      height: 380px;
+      height: 290px;
       justify-content: center;
    }
 }
@@ -115,12 +118,9 @@
    .impressum {
       font-size: 16px;
    }
-   .impressum-link {
+   .impressum {
       position: absolute;
       left: 109px;
-      bottom: 129px;
-   }
-   .impressum-link {
-      bottom: 80px;
+      bottom: 75px;
    }
 }

@@ -28,20 +28,17 @@ $primary: #900;
 $enable-shadows: true;
 $prefix: 'mo-';
 
-// Then import Bootstrap
-@import '../node_modules/bootstrap/scss/bootstrap';
-
 body {
    margin: 0;
-   // overflow-x: hidden;
+   overflow-x: hidden;
    font-family: 'Poppins' !important;
    background-color: #141d2f;
+   width: 100%;
 }
 
 html {
    overflow-x: hidden;
    scroll-behavior: smooth;
-   width: 100vw;
 }
 
 :host {
@@ -50,23 +47,6 @@ html {
    align-items: center;
    justify-content: center;
    // background-color: #141d2f;
-}
-
-app-main-content {
-   max-width: 100%;
-}
-
-app-impressum {
-   color: white;
-   width: 100vw;
-   padding: 37px 25px;
-   height: 65.7vh;
-   max-width: 1440px;
-   font-size: 16px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
 }
 
 /* width */

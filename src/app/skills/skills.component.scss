@@ -7,14 +7,15 @@ a {
    justify-content: space-between;
    align-items: flex-start;
    flex-direction: row-reverse;
-   width: 100vw;
+   width: 100%;
    max-width: 100%;
    background-color: #141d2f;
    padding: 80px;
-   margin-top: 60px;
    box-sizing: border-box;
    text-align: right;
    position: relative;
+   margin-left: 0px !important;
+   margin-right: 0px !important;
 }
 :host {
    display: flex;
@@ -25,7 +26,6 @@ a {
 }
 
 .bg-img {
-   z-index: 11;
    background-image: url('../../assets/img/greenshadow.svg');
    background-repeat: no-repeat;
    background-position: left;
@@ -52,7 +52,6 @@ a {
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
-      margin-right: 45px;
    }
 }
 
@@ -77,6 +76,7 @@ a {
    width: 88px;
    height: 100px;
    margin: 20px;
+   z-index: 999;
    img {
       width: 56px;
       height: 85px;
@@ -104,6 +104,7 @@ a {
       align-items: center;
       background-color: #70e61c;
       border-radius: 10px;
+      border: none;
       background: #70e61c;
       box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
       transition: transform 0.2s;
@@ -135,33 +136,7 @@ a {
    display: flex;
    font-size: 23px;
    align-items: center;
-   justify-content: center;
-}
-
-@media screen and (max-width: 1100px) {
-   .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      padding-top: 0px;
-      margin-top: 0px;
-   }
-   .skills-container {
-      width: 100vw;
-      margin: 0px 0px 50px 0;
-   }
-   .skills-box {
-      justify-content: center;
-   }
-   .skills-header {
-      justify-content: center;
-   }
-   .content {
-      p {
-         text-align: center;
-      }
-   }
+   justify-content: flex-end;
 }
 
 @media screen and (max-width: 700px) {
@@ -187,8 +162,14 @@ a {
    .content {
       p {
          text-align: end;
+         margin-right: 50px;
+      }
+      .btn {
+         justify-content: flex-end;
+         margin-right: 50px;
       }
    }
+
    .skill {
       display: flex;
       flex-direction: column;
@@ -206,6 +187,36 @@ a {
             cursor: pointer;
             transform: scale(1.2);
          }
+      }
+   }
+}
+
+@media screen and (max-width: 1100px) {
+   .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 20px;
+      margin-top: 0px;
+   }
+   .skills-container {
+      width: 100vw;
+      margin: 0px 0px 50px 0;
+   }
+   .skills-box {
+      justify-content: center;
+   }
+   .skills-header {
+      justify-content: center;
+   }
+   .content {
+      justify-content: center;
+      p {
+         text-align: center;
+      }
+      .btn {
+         justify-content: center;
       }
    }
 }

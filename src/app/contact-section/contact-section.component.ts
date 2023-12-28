@@ -50,7 +50,7 @@ export class ContactSectionComponent {
          this.renderer.addClass(inputElement, 'background-image-green');
          this.renderer.removeClass(inputElement, 'background-image-red');
       } else {
-         this.renderer.addClass(inputElement, 'background-image-red');
+         // this.renderer.addClass(inputElement, 'background-image-red');
          this.renderer.removeClass(inputElement, 'background-image-green');
       }
    }
